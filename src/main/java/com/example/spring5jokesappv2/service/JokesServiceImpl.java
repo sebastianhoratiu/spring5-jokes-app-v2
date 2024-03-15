@@ -13,7 +13,7 @@ public class JokesServiceImpl implements JokesService {
         this.chuckNorrisQuotes = chuckNorrisQuotes;
     }
 
-    public Joke getRandomJoke() {
+    public Joke getJoke() {
         return new Joke(chuckNorrisQuotes.getRandomQuote());
     }
 }
