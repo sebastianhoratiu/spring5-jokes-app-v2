@@ -1,6 +1,5 @@
 package com.example.spring5jokesappv2.service;
 
-import com.example.spring5jokesappv2.model.Joke;
 import guru.springframework.norris.chuck.ChuckNorrisQuotes;
 import org.springframework.stereotype.Service;
 
@@ -13,7 +12,7 @@ public class JokesServiceImpl implements JokesService {
         this.chuckNorrisQuotes = chuckNorrisQuotes;
     }
 
-    public Joke getJoke() {
-        return new Joke(chuckNorrisQuotes.getRandomQuote());
+    public String getJoke() {
+        return chuckNorrisQuotes.getRandomQuote();
     }
 }
